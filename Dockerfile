@@ -58,6 +58,6 @@ RUN pip3 install youtube-dl
 
 RUN mkdir -p /var/run/php/
 ENTRYPOINT ["entrypoint.sh"]
-CMD [ "php-fpm7.3", "-F", "-y", "/etc/php/7.3/fpm/php-fpm.conf" ]
+CMD [ "php-fpm7.3", "-F", "-R", "-y", "/etc/php/7.3/fpm/php-fpm.conf" ]
 
 
